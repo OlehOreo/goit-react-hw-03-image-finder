@@ -41,7 +41,7 @@ export class App extends Component {
           style: { width: '1000px', height: '80px' },
         });
       }
-      if (!this.state.toast) {
+      if (!this.state.toast && queryImg.length > 0) {
         toast.success('We found images');
         this.setState({ toast: true });
       }
